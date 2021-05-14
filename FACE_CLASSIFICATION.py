@@ -31,7 +31,7 @@ cap = cv2.VideoCapture(0)
 
 while True:
     success, img = cap.read()
-    imgs = cv2.resize(img, (0,0), None, 0.25, 0.25)
+    imgs = cv2.resize(img, (0,0), None, 0.25, 0.25)                                             # Resizing the image to 1/4 th of original
     imgs = cv2.cvtColor(imgs, cv2.COLOR_BGR2RGB)
 
     face_curr_frame = face_recognition.face_locations(imgs)                                     # if face recognised sends the coordinate of Bounding-Box
@@ -46,7 +46,7 @@ while True:
         if matches[matchindex]:
             name = class_names[matchindex].upper()
             y1, x2, y2, x1 = facelocframe
-            y1, x2, y2, x1 = y1*4, x2*4, y2*4, x1*4
+            y1, x2, y2, x1 = y1*4, x2*4, y2*4, x1*4                                             # Points are predicted for resized image, so multiplied by 4 to locate on original image.
             cv2.rectangle(img, (x1,y1), (x2,y2), (0,255,0), 2)
             #cv2.rectangle(img, (x1, y2-35), (x2,y2),(0,255,0),cv2.FILLED)                      # uncomment if u want the name to be in a color filled box
             cv2.putText(img, name, (x1+6, y2-6), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 2)

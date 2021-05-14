@@ -13,6 +13,6 @@ There are many more functions we can explore.
 
 **Face Classification:**
 
-If we create a dataset human faces with their name as Filenames, Face_recognition library can be used to compare the real - time captured face to a present dataset to find out the person's name.
+If we create a dataset of human faces with their name as Filenames, Face_recognition library can be used to compare the real - time captured face to a present dataset to find out the person.
 
 **Reference** : https://pypi.org/project/face-recognition/

@@ -15,4 +15,13 @@ There are many more functions we can explore.
 
 If we create a dataset of human faces with their name as Filenames, Face_recognition library can be used to compare the real - time captured face to a present dataset to find out the person.
 
+**OUTPUTS :**
+
+![image](https://user-images.githubusercontent.com/72727518/118289200-b82d6480-b4f2-11eb-953d-5b8caa5f5567.png)
+![image](https://user-images.githubusercontent.com/72727518/118289241-c2e7f980-b4f2-11eb-91dd-72ae6fd87bad.png)
+
+**USAGE :**
+
+Install face-recognition library and change the path of training dataset to your storage directory.
+
 **Reference** : https://pypi.org/project/face-recognition/

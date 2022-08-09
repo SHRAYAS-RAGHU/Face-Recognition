@@ -25,4 +25,4 @@ If we create a dataset of human faces with their name as Filenames, Face_recogni
 
 Install face-recognition library and change the path of training dataset to your storage directory.
 
-**Reference** : https://pypi.org/project/face-recognition/
+**Package used** : https://pypi.org/project/face-recognition/
